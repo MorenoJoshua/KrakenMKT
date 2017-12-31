@@ -1,0 +1,69 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#videoBG {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    min-height: 200vh !important;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+}
+
+.h-100vh {
+    height: 100vh !important;
+}
+
+.fs {
+    width: 100vw !important;
+    min-height: 100vh !important;
+}
+
+.w-100vw {
+    min-height: 100vh !important;
+}
+
+#scrollDown {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#demoReel {
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+}
+
+#formaContacto > div > div > input,
+#formaContacto > div > div > textarea {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+}
+
+#content, #scrollDown {
+    will-change: opacity;
+    transition: 300ms;
+}
+
+#content.hidden, #scrollDown.hidden {
+    opacity: 0;
+}
+
+.nodeco {
+    text-decoration: none !important;
+}

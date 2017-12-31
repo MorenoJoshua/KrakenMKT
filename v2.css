@@ -1,0 +1,93 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#videoBG {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+#content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    min-height: 100vh !important;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: 200ms !important;
+}
+
+#content.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fs {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w50 {
+    width: 50vw;
+}
+
+.h50 {
+    height: 50vh;
+}
+
+.produccionAudiovisual {
+    background-size: cover !important;
+    background: url("prod.jpg") center center;
+}
+
+.marcadotecniaDigital {
+    background-size: cover !important;
+    background: url("mkt.jpg") center center;
+}
+
+.secc-dark {
+    background: rgba(0, 0, 0, 0);
+    text-shadow: 0.24rem 0.24rem 0.24rem rgba(0, 0, 0, 0.7);
+    transition: 300ms;
+}
+
+.secc-dark:hover {
+    background: rgba(0, 0, 0, 0.5);
+    text-shadow: 0.24rem 0.24rem 0.24rem rgba(0, 0, 0, 0.7);
+}
+
+#demoReel {
+    position: fixed;
+    bottom: 10px;
+    right: 14px;
+}
+
+#formaContacto > div > div > input,
+#formaContacto > div > div > textarea {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: #fff;
+}
+
+.logo-size {
+    font-size: 3.3rem !important;
+}
+
+a {
+    text-decoration: none !important;
+}
