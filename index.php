@@ -20,7 +20,7 @@ $logoCh = imgRatio(2166, 860, false, 220);
     <title>KRAKEN MKT STUDIO</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
 </head>
 <body class="p-0 m-0">

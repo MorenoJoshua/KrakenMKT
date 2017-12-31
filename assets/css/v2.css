@@ -53,12 +53,12 @@ body {
 
 .produccionAudiovisual {
     background-size: cover !important;
-    background: url("prod.jpg") center center;
+    background: url("../img/prod.jpg") center center;
 }
 
 .marcadotecniaDigital {
     background-size: cover !important;
-    background: url("mkt.jpg") center center;
+    background: url("../img/mkt.jpg") center center;
 }
 
 .secc-dark {

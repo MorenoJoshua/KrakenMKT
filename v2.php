@@ -26,11 +26,11 @@ $logoCh = imgRatio(2166, 860, false, 220);
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="v2.css">
+    <link rel="stylesheet" href="assets/css/v2.css">
 </head>
 <body class="p-0 m-0">
 <video autoplay muted loop id="videoBG">
-    <source src="demo_kraken_HQ.mp4" type="video/mp4">
+    <source src="assets/vid/demo_kraken.mp4" type="video/mp4">
 </video>
 
 <div id="content">
@@ -47,9 +47,9 @@ $logoCh = imgRatio(2166, 860, false, 220);
                         <div class="row text-center">
                             <div class="w-100">
                                 <div class="row d-block">
-                                    <img src="logo.png" alt="" class="mx-sm-0 mx-md-4 d-inline-block d-md-none"
+                                    <img src="assets/img/logo.png" alt="" class="mx-sm-0 mx-md-4 d-inline-block d-md-none"
                                          style="width: <?= $logoCh['w'] ?>px; height: <?= $logoCh['h'] ?>px">
-                                    <img src="logo.png" alt="" class="mx-sm-0 mx-md-4 d-none d-md-inline-block"
+                                    <img src="assets/img/logo.png" alt="" class="mx-sm-0 mx-md-4 d-none d-md-inline-block"
                                          style="width: <?= $logoGr['w'] ?>px; height: <?= $logoGr['h'] ?>px">
                                 </div>
                                 <div class="row display-3 d-none d-md-block mt-2">
@@ -78,7 +78,8 @@ $logoCh = imgRatio(2166, 860, false, 220);
                             <a href="https://vimeo.com/krakenmkt" class="text-white h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
                         </div>
                         <div class="w50 marcadotecniaDigital">
-                            <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/" class="text-white h-100 w-100 center-center text-center secc-dark">Mercadotecnia<br>Digital</a>
+                            <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/"
+                               class="text-white h-100 w-100 center-center text-center secc-dark">Mercadotecnia<br>Digital</a>
                         </div>
                     </div>
                     <div class="fs h1 text-white flex-column d-flex d-lg-none">
@@ -86,7 +87,8 @@ $logoCh = imgRatio(2166, 860, false, 220);
                             <a href="https://vimeo.com/krakenmkt" class="h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
                         </div>
                         <div class="h50 marcadotecniaDigital">
-                            <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/s" class="text-white h-100 w-100 center-center text-center secc-dark">Mercadotecnia<br>Digital</a>
+                            <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/s"
+                               class="text-white h-100 w-100 center-center text-center secc-dark">Mercadotecnia<br>Digital</a>
                         </div>
                     </div>
                 </div>
@@ -142,7 +144,26 @@ $logoCh = imgRatio(2166, 860, false, 220);
         document.getElementById('content').classList.toggle('hidden');
     }
 
-    $('.carousel').bcSwipe({threshold: 50});
+    images = [];
+
+    function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+            images[i] = new Image()
+            images[i].src = preload.arguments[i]
+        }
+    }
+
+    function init() {
+        $('.carousel').bcSwipe({threshold: 50});
+        preload(
+            "./assets/img/mkt.jpg",
+            "./assets/img/prod.jpg",
+        )
+    }
+
+    $(function () {
+        init();
+    });
 </script>
 </body>
 </html>
