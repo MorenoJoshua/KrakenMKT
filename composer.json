@@ -1,3 +1,6 @@
 {
-  "require": {}
+  "require": {
+    "swiftmailer/swiftmailer": "^6.0",
+    "ktamas77/firebase-php": "dev-master"
+  }
 }
