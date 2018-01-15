@@ -84,7 +84,7 @@ $logoCh = imgRatio(2166, 860, false, 220);
                     </div>
                     <div class="fs h1 text-white flex-column d-flex d-lg-none">
                         <div class="h50 produccionAudiovisual">
-                            <a href="https://vimeo.com/krakenmkt" class="h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
+                            <a href="https://vimeo.com/krakenmkt" class="text-white h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
                         </div>
                         <div class="h50 marcadotecniaDigital">
                             <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/s"
