@@ -15,7 +15,8 @@ $logoCh = imgRatio(2166, 860, false, 220);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>KRAKEN</title>
 
@@ -37,7 +38,7 @@ $logoCh = imgRatio(2166, 860, false, 220);
     <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/img/icon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icon/favicon-16x16.png">
@@ -48,16 +49,16 @@ $logoCh = imgRatio(2166, 860, false, 220);
 
 </head>
 <body class="p-0 m-0">
-<video autoplay muted loop>
-    <source src="./assets/vid/output.webm" type="video/webm; codecs=vp9,vorbis">
-    <source src="./assets/vid/output.mp4" type="video/mp4">
-</video>
+
 <video autoplay muted loop id="videoBG">
-    <source src="assets/vid/demo_kraken.mp4" type="video/mp4">
+    <source src="./assets/vid/output.ogg" type="video/ogv" class="videoBG">
+    <source src="./assets/vid/output.webm" type="video/webm; codecs=vp9,vorbis" class="videoBG">
+    <source src="./assets/vid/output.mp4" type="video/mp4" class="videoBG">
 </video>
 
 <div id="content">
-    <div id="indicadores" class="carousel slide" data-ride="carousel" data-interval="false" data-keyboard="true" data-wrap="false">
+    <div id="indicadores" class="carousel slide" data-ride="carousel" data-interval="false" data-keyboard="true"
+         data-wrap="false">
         <ol class="carousel-indicators">
             <li data-target="#indicadores" data-slide-to="0" class="active"></li>
             <li data-target="#indicadores" data-slide-to="1"></li>
@@ -70,20 +71,24 @@ $logoCh = imgRatio(2166, 860, false, 220);
                         <div class="row text-center">
                             <div class="w-100">
                                 <div class="row d-block">
-                                    <img src="assets/img/logo.png" alt="" class="mx-sm-0 mx-md-4 d-inline-block d-md-none"
+                                    <img src="assets/img/logo.png" alt=""
+                                         class="mx-sm-0 mx-md-4 d-inline-block d-md-none"
                                          style="width: <?= $logoCh['w'] ?>px; height: <?= $logoCh['h'] ?>px">
-                                    <img src="assets/img/logo.png" alt="" class="mx-sm-0 mx-md-4 d-none d-md-inline-block"
+                                    <img src="assets/img/logo.png" alt=""
+                                         class="mx-sm-0 mx-md-4 d-none d-md-inline-block"
                                          style="width: <?= $logoGr['w'] ?>px; height: <?= $logoGr['h'] ?>px">
                                 </div>
                                 <div class="row display-3 d-none d-md-block mt-2">
-                                    <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/" target="_blank"
+                                    <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/"
+                                       target="_blank"
                                        class="text-white nodeco fa fa-facebook-square px-3"></a>
                                     <a href="https://www.instagram.com/krakenmktstudio/" target="_blank"
                                        class="text-white nodeco fa fa-instagram px-3"></a>
                                     <a href="#" target="_blank" class="text-white nodeco fa fa-vimeo px-3"></a>
                                 </div>
                                 <div class="row d-block logo-size mt-2 d-block d-md-none">
-                                    <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/" target="_blank"
+                                    <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/"
+                                       target="_blank"
                                        class="text-white nodeco fa fa-facebook-square px-1"></a>
                                     <a href="https://www.instagram.com/krakenmktstudio/" target="_blank"
                                        class="text-white nodeco fa fa-instagram px-1"></a>
@@ -98,7 +103,8 @@ $logoCh = imgRatio(2166, 860, false, 220);
                 <div id="trabajo">
                     <div class="fs display-4 text-white d-none d-lg-flex">
                         <div class="w50 produccionAudiovisual">
-                            <a href="https://vimeo.com/krakenmkt" class="text-white h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
+                            <a href="https://vimeo.com/krakenmkt"
+                               class="text-white h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
                         </div>
                         <div class="w50 marcadotecniaDigital">
                             <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/"
@@ -107,7 +113,8 @@ $logoCh = imgRatio(2166, 860, false, 220);
                     </div>
                     <div class="fs h1 text-white flex-column d-flex d-lg-none">
                         <div class="h50 produccionAudiovisual">
-                            <a href="https://vimeo.com/krakenmkt" class="text-white h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
+                            <a href="https://vimeo.com/krakenmkt"
+                               class="text-white h-100 w-100 center-center text-center secc-dark">Producci&oacute;n<br>Audiovisual</a>
                         </div>
                         <div class="h50 marcadotecniaDigital">
                             <a href="https://www.facebook.com/Kraken-Mkt-Studio-978014658962325/s"
@@ -163,30 +170,30 @@ $logoCh = imgRatio(2166, 860, false, 220);
     <a onclick="doDemo()" class=" fa fa-window-maximize"></a>
 </div>
 <script>
-    function doDemo() {
-        document.getElementById('content').classList.toggle('hidden');
+  function doDemo() {
+    document.getElementById('content').classList.toggle('hidden');
+  }
+
+  images = [];
+
+  function preload() {
+    for (i = 0; i < preload.arguments.length; i++) {
+      images[i] = new Image();
+      images[i].src = preload.arguments[i]
     }
+  }
 
-    images = [];
+  function init() {
+    $('.carousel').bcSwipe({ threshold: 50 });
+    preload(
+      "./assets/img/mkt.jpg",
+      "./assets/img/prod.jpg",
+    )
+  }
 
-    function preload() {
-        for (i = 0; i < preload.arguments.length; i++) {
-            images[i] = new Image();
-            images[i].src = preload.arguments[i]
-        }
-    }
-
-    function init() {
-        $('.carousel').bcSwipe({threshold: 50});
-        preload(
-            "./assets/img/mkt.jpg",
-            "./assets/img/prod.jpg",
-        )
-    }
-
-    $(function () {
-        init();
-    });
+  $(function () {
+    init();
+  });
 </script>
 </body>
 </html>
