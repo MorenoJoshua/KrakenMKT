@@ -48,6 +48,10 @@ $logoCh = imgRatio(2166, 860, false, 220);
 
 </head>
 <body class="p-0 m-0">
+<video autoplay muted loop>
+    <source src="./assets/vid/output.webm" type="video/webm; codecs=vp9,vorbis">
+    <source src="./assets/vid/output.mp4" type="video/mp4">
+</video>
 <video autoplay muted loop id="videoBG">
     <source src="assets/vid/demo_kraken.mp4" type="video/mp4">
 </video>
