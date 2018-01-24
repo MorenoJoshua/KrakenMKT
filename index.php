@@ -140,7 +140,7 @@ $logoCh = imgRatio(2166, 860, false, 220);
                                         <input type="tel" name="telefono" placeholder="Telefono" class="form-control">
                                     </div>
                                     <div class="col-12 mb-2">
-                                        <input type="email" name="email" placeholder="Email" class="form-control">
+                                        <input type="email" name="correo" placeholder="Email" class="form-control">
                                     </div>
                                     <!--                    <div class="col-12 mb-2">-->
                                     <!--                        <textarea name="comentario" id="comentario" cols="30" rows="10" class="form-control" placeholder="Comentario"></textarea>-->
